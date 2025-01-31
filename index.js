@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // เมื่อเข้าหน้า root ให้ส่งไฟล์ index.html
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'view', 'index.html'));
 });
 
 app.listen(port, () => {
